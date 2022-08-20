@@ -1,0 +1,74 @@
+show_progress(0.200000, 10);
+
+ui_print("Updating abl...");
+package_extract_file("abl.img", "/dev/block/bootdevice/by-name/abl_a");
+package_extract_file("abl.img", "/dev/block/bootdevice/by-name/abl_b");
+
+ui_print("Updating aop...");
+package_extract_file("aop.img", "/dev/block/bootdevice/by-name/aop_a");
+package_extract_file("aop.img", "/dev/block/bootdevice/by-name/aop_b");
+
+ui_print("Updating bluetooth...");
+package_extract_file("bluetooth.img", "/dev/block/bootdevice/by-name/bluetooth_a");
+package_extract_file("bluetooth.img", "/dev/block/bootdevice/by-name/bluetooth_b");
+
+ui_print("Updating cmnlib...");
+package_extract_file("cmnlib.img", "/dev/block/bootdevice/by-name/cmnlib_a");
+package_extract_file("cmnlib.img", "/dev/block/bootdevice/by-name/cmnlib_b");
+
+ui_print("Updating cmnlib64...");
+package_extract_file("cmnlib64.img", "/dev/block/bootdevice/by-name/cmnlib64_a");
+package_extract_file("cmnlib64.img", "/dev/block/bootdevice/by-name/cmnlib64_b");
+
+ui_print("Updating devcfg...");
+package_extract_file("devcfg.img", "/dev/block/bootdevice/by-name/devcfg_a");
+package_extract_file("devcfg.img", "/dev/block/bootdevice/by-name/devcfg_b");
+
+ui_print("Updating dsp...");
+package_extract_file("dsp.img", "/dev/block/bootdevice/by-name/dsp_a");
+package_extract_file("dsp.img", "/dev/block/bootdevice/by-name/dsp_b");
+
+ui_print("Updating featenabler...");
+package_extract_file("featenabler.img", "/dev/block/bootdevice/by-name/featenabler_a");
+package_extract_file("featenabler.img", "/dev/block/bootdevice/by-name/featenabler_b");
+
+ui_print("Updating hyp...");
+package_extract_file("hyp.img", "/dev/block/bootdevice/by-name/hyp_a");
+package_extract_file("hyp.img", "/dev/block/bootdevice/by-name/hyp_b");
+
+ui_print("Updating imagefv...");
+package_extract_file("imagefv.img", "/dev/block/bootdevice/by-name/imagefv_a");
+package_extract_file("imagefv.img", "/dev/block/bootdevice/by-name/imagefv_b");
+
+ui_print("Updating keymaster...");
+package_extract_file("keymaster.img", "/dev/block/bootdevice/by-name/keymaster_a");
+package_extract_file("keymaster.img", "/dev/block/bootdevice/by-name/keymaster_b");
+
+ui_print("Updating modem...");
+package_extract_file("modem.img", "/dev/block/bootdevice/by-name/modem_a");
+package_extract_file("modem.img", "/dev/block/bootdevice/by-name/modem_b");
+
+ui_print("Updating qupfw...");
+package_extract_file("qupfw.img", "/dev/block/bootdevice/by-name/qupfw_a");
+package_extract_file("qupfw.img", "/dev/block/bootdevice/by-name/qupfw_b");
+
+ui_print("Updating tz...");
+package_extract_file("tz.img", "/dev/block/bootdevice/by-name/tz_a");
+package_extract_file("tz.img", "/dev/block/bootdevice/by-name/tz_b");
+
+ui_print("Updating uefisecapp...");
+package_extract_file("uefisecapp.img", "/dev/block/bootdevice/by-name/uefisecapp_a");
+package_extract_file("uefisecapp.img", "/dev/block/bootdevice/by-name/uefisecapp_b");
+
+ui_print("Updating xbl...");
+package_extract_file("xbl.img", "/dev/block/bootdevice/by-name/xbl_a");
+package_extract_file("xbl.img", "/dev/block/bootdevice/by-name/xbl_b");
+
+ui_print("Updating xbl_config...");
+package_extract_file("xbl_config.img", "/dev/block/bootdevice/by-name/xbl_config_a");
+package_extract_file("xbl_config.img", "/dev/block/bootdevice/by-name/xbl_config_b");
+
+
+show_progress(0.100000, 2);
+set_progress(1.000000);
+ui_print("Done!");
