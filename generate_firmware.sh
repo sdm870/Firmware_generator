@@ -31,5 +31,5 @@ do
     wget -O $(basename $i) $i
     ./payload-dumper-go -p $partitions -o . $(basename $i)
     zip -r firmware_$(basename $i) META-INF *.img flash_firmware* && rm *.img
-    rm $(basename $1)
+    rm $(basename $i)
 done
