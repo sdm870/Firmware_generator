@@ -12,14 +12,14 @@ if [ $arch == aarch64 ]; then
 fi
 
 payload_link="https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper-go_1.2.2_linux_$arch.tar.gz"
-zips="https://bigota.d.miui.com/V13.0.6.0.SKHINXM/miui_ALIOTHINGlobal_V13.0.6.0.SKHINXM_2492066c1d_12.0.zip
-      https://bigota.d.miui.com/V13.0.6.0.SKHEUXM/miui_ALIOTHEEAGlobal_V13.0.6.0.SKHEUXM_c393876947_12.0.zip
-      https://bigota.d.miui.com/V13.0.3.0.SKHMIXM/miui_ALIOTHGlobal_V13.0.3.0.SKHMIXM_07afcb74cd_12.0.zip
-      https://bigota.d.miui.com/V13.0.2.0.SKHIDXM/miui_ALIOTHIDGlobal_V13.0.2.0.SKHIDXM_80a5a01aa6_12.0.zip
-      https://bigota.d.miui.com/V13.0.2.0.SKHRUXM/miui_ALIOTHRUGlobal_V13.0.2.0.SKHRUXM_101e499a8e_12.0.zip
-      https://bigota.d.miui.com/V13.0.1.0.SKHTWXM/miui_ALIOTHTWGlobal_V13.0.1.0.SKHTWXM_1573a396df_12.0.zip
-      https://bigota.d.miui.com/V13.0.1.0.SKHTRXM/miui_ALIOTHTRGlobal_V13.0.1.0.SKHTRXM_1eaf50fc2f_12.0.zip
-      https://bigota.d.miui.com/V13.0.5.0.SKHCNXM/miui_ALIOTH_V13.0.5.0.SKHCNXM_540c833165_12.0.zip"
+zips="https://bigota.d.miui.com/V14.0.3.0.TKHINXM/miui_ALIOTHINGlobal_V14.0.3.0.TKHINXM_d2d6e90e6d_13.0.zip
+      https://bigota.d.miui.com/V14.0.7.0.TKHEUXM/miui_ALIOTHEEAGlobal_V14.0.7.0.TKHEUXM_4f54362c0d_13.0.zip
+      https://bigota.d.miui.com/V14.0.4.0.TKHMIXM/miui_ALIOTHGlobal_V14.0.4.0.TKHMIXM_b9ed940850_13.0.zip
+      https://bigota.d.miui.com/V14.0.2.0.TKHIDXM/miui_ALIOTHIDGlobal_V14.0.2.0.TKHIDXM_171dfd6f1e_13.0.zip
+      https://bigota.d.miui.com/V14.0.1.0.TKHRUXM/miui_ALIOTHRUGlobal_V14.0.1.0.TKHRUXM_310b547162_13.0.zip
+      https://bigota.d.miui.com/V14.0.1.0.TKHTWXM/miui_ALIOTHTWGlobal_V14.0.1.0.TKHTWXM_66bf484519_13.0.zip
+      https://bigota.d.miui.com/V14.0.1.0.TKHTRXM/miui_ALIOTHTRGlobal_V14.0.1.0.TKHTRXM_69e8dd9865_13.0.zip
+      https://bigota.d.miui.com/V14.0.6.0.TKHCNXM/miui_ALIOTH_V14.0.6.0.TKHCNXM_7b7bb4a7bc_13.0.zip"
 
 wget $payload_link -O payload-dumper-go.tar.gz
 tar -xf payload-dumper-go.tar.gz payload-dumper-go && rm payload-dumper-go.tar.gz
