@@ -21,15 +21,18 @@ zips="https://bigota.d.miui.com/V14.0.3.0.TKHINXM/miui_ALIOTHINGlobal_V14.0.3.0.
       https://bigota.d.miui.com/V14.0.1.0.TKHTRXM/miui_ALIOTHTRGlobal_V14.0.1.0.TKHTRXM_69e8dd9865_13.0.zip
       https://bigota.d.miui.com/V14.0.6.0.TKHCNXM/miui_ALIOTH_V14.0.6.0.TKHCNXM_7b7bb4a7bc_13.0.zip"
 
-wget $payload_link -O payload-dumper-go.tar.gz
+echo "Downloading payload dumper..."
+wget --quiet $payload_link -O payload-dumper-go.tar.gz
 tar -xf payload-dumper-go.tar.gz payload-dumper-go && rm payload-dumper-go.tar.gz
 
 partitions="abl,aop,bluetooth,cmnlib,cmnlib64,devcfg,dsp,featenabler,hyp,imagefv,keymaster,modem,qupfw,tz,uefisecapp,xbl,xbl_config"
 
 for i in $zips
 do
-    wget -O $(basename $i) $i
-    ./payload-dumper-go -p $partitions -o . $(basename $i)
-    zip -r firmware_$(basename $i) META-INF *.img flash_firmware* && rm *.img
+    echo "Downloading $(basename $i).."
+    wget --quiet -O $(basename $i) $i
+    ./payload-dumper-go -p $partitions -o . $(basename $i) >/dev/null 2>&1
+    echo "Zipping firmware_$(basename $i)..."
+    zip -r -q firmware_$(basename $i) META-INF *.img flash_firmware* && rm *.img
     rm $(basename $i)
 done
