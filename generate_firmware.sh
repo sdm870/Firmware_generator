@@ -40,14 +40,14 @@ elif [ "$arch" == "aarch64" ]; then
 fi
 
 payload_link="https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper-go_1.2.2_linux_$arch.tar.gz"
-zips="https://bigota.d.miui.com/V14.0.3.0.TKHINXM/miui_ALIOTHINGlobal_V14.0.3.0.TKHINXM_d2d6e90e6d_13.0.zip
-      https://bigota.d.miui.com/V14.0.7.0.TKHEUXM/miui_ALIOTHEEAGlobal_V14.0.7.0.TKHEUXM_4f54362c0d_13.0.zip
-      https://bigota.d.miui.com/V14.0.4.0.TKHMIXM/miui_ALIOTHGlobal_V14.0.4.0.TKHMIXM_b9ed940850_13.0.zip
-      https://bigota.d.miui.com/V14.0.2.0.TKHIDXM/miui_ALIOTHIDGlobal_V14.0.2.0.TKHIDXM_171dfd6f1e_13.0.zip
-      https://bigota.d.miui.com/V14.0.1.0.TKHRUXM/miui_ALIOTHRUGlobal_V14.0.1.0.TKHRUXM_310b547162_13.0.zip
-      https://bigota.d.miui.com/V14.0.1.0.TKHTWXM/miui_ALIOTHTWGlobal_V14.0.1.0.TKHTWXM_66bf484519_13.0.zip
-      https://bigota.d.miui.com/V14.0.1.0.TKHTRXM/miui_ALIOTHTRGlobal_V14.0.1.0.TKHTRXM_69e8dd9865_13.0.zip
-      https://bigota.d.miui.com/V14.0.6.0.TKHCNXM/miui_ALIOTH_V14.0.6.0.TKHCNXM_7b7bb4a7bc_13.0.zip"
+zips="https://cdn-ota.azureedge.net/V14.0.5.0.TKHINXM/miui_ALIOTHINGlobal_V14.0.5.0.TKHINXM_2b58e06a45_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.11.0.TKHEUXM/miui_ALIOTHEEAGlobal_V14.0.11.0.TKHEUXM_067e9d6f67_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.8.0.TKHMIXM/miui_ALIOTHGlobal_V14.0.8.0.TKHMIXM_4baed81b95_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.4.0.TKHIDXM/miui_ALIOTHIDGlobal_V14.0.4.0.TKHIDXM_b6fecb3025_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.3.0.TKHRUXM/miui_ALIOTHRUGlobal_V14.0.3.0.TKHRUXM_966287acb9_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.3.0.TKHTWXM/miui_ALIOTHTWGlobal_V14.0.3.0.TKHTWXM_4aabc516ec_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.3.0.TKHTRXM/miui_ALIOTHTRGlobal_V14.0.3.0.TKHTRXM_a03307201d_13.0.zip
+      https://cdn-ota.azureedge.net/V14.0.8.0.TKHCNXM/miui_ALIOTH_V14.0.8.0.TKHCNXM_50141f32f2_13.0.zip"
 
 echo "Downloading payload dumper..."
 aria2c --file-allocation=none -x 16 "$payload_link"
@@ -55,8 +55,7 @@ tar -xf payload-dumper-go_*.tar.gz payload-dumper-go && rm payload-dumper-go_*.t
 
 partitions="abl,aop,bluetooth,cmnlib,cmnlib64,devcfg,dsp,featenabler,hyp,imagefv,keymaster,modem,qupfw,tz,uefisecapp,xbl,xbl_config"
 
-for i in $zips
-do
+for i in $zips; do
     echo "Downloading $(basename "$i").."
     aria2c --file-allocation=none -x 16 "$i"
     echo "Extracting firmware from $(basename "$i")..."
