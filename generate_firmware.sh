@@ -55,9 +55,25 @@ tar -xf payload-dumper-go_*.tar.gz payload-dumper-go && rm payload-dumper-go_*.t
 
 partitions="abl,aop,bluetooth,cmnlib,cmnlib64,devcfg,dsp,featenabler,hyp,imagefv,keymaster,modem,qupfw,tz,uefisecapp,xbl,xbl_config"
 
+max_retries=3
+
 for i in $zips; do
-    echo "Downloading $(basename "$i").."
-    aria2c --file-allocation=none -x 16 "$i"
+    retries=0
+    while [ $retries -lt $max_retries ]; do
+        echo "Downloading $(basename "$i") (attempt $((retries + 1)) of $max_retries)..."
+        if aria2c --file-allocation=none -x 16 "$i"; then
+            break
+        else
+            ((retries++))
+            echo "Download failed. Retrying..."
+        fi
+    done
+
+    if [ $retries -eq $max_retries ]; then
+        echo "Max retries reached. Skipping $(basename "$i")."
+        continue
+    fi
+
     echo "Extracting firmware from $(basename "$i")..."
     ./payload-dumper-go -p "$partitions" -o . "$(basename "$i")" >/dev/null 2>&1
     echo "Zipping firmware_$(basename "$i")..."
