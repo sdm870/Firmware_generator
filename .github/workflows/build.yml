@@ -23,11 +23,11 @@ jobs:
         prerelease: false
         title: "${{ env.GITHUB_SHA }}"
         files: |
-          firmware_miui_ALIOTHEEAGlobal_V14.0.7.0.TKHEUXM_4f54362c0d_13.0.zip
-          firmware_miui_ALIOTHGlobal_V14.0.4.0.TKHMIXM_b9ed940850_13.0.zip
-          firmware_miui_ALIOTHIDGlobal_V14.0.2.0.TKHIDXM_171dfd6f1e_13.0.zip
-          firmware_miui_ALIOTHINGlobal_V14.0.3.0.TKHINXM_d2d6e90e6d_13.0.zip
-          firmware_miui_ALIOTHRUGlobal_V14.0.1.0.TKHRUXM_310b547162_13.0.zip
-          firmware_miui_ALIOTHTRGlobal_V14.0.1.0.TKHTRXM_69e8dd9865_13.0.zip
-          firmware_miui_ALIOTHTWGlobal_V14.0.1.0.TKHTWXM_66bf484519_13.0.zip
-          firmware_miui_ALIOTH_V14.0.6.0.TKHCNXM_7b7bb4a7bc_13.0.zip
+          firmware_miui_ALIOTHEEAGlobal_OS1.0.1.0.TKHEUXM_b0de6008b0_13.0.zip
+          firmware_miui_ALIOTHGlobal_OS1.0.2.0.TKHMIXM_b69e6a5400_13.0.zip
+          firmware_miui_ALIOTHIDGlobal_OS1.0.1.0.TKHIDXM_1c1539a15f_13.0.zip
+          firmware_miui_ALIOTHINGlobal_OS1.0.1.0.TKHINXM_37dcb3109e_13.0.zip
+          firmware_miui_ALIOTHRUGlobal_V14.0.3.0.TKHRUXM_966287acb9_13.0.zip
+          firmware_miui_ALIOTHTRGlobal_V14.0.3.0.TKHTRXM_a03307201d_13.0.zip
+          firmware_miui_ALIOTHTWGlobal_V14.0.3.0.TKHTWXM_4aabc516ec_13.0.zip
+          firmware_miui_ALIOTH_OS1.0.3.0.TKHCNXM_eab81b6bf0_13.0.zip
