@@ -44,9 +44,9 @@ zips="https://bn.d.miui.com/OS1.0.1.0.TKHINXM/miui_ALIOTHINGlobal_OS1.0.1.0.TKHI
       https://bn.d.miui.com/OS1.0.1.0.TKHEUXM/miui_ALIOTHEEAGlobal_OS1.0.1.0.TKHEUXM_b0de6008b0_13.0.zip
       https://bn.d.miui.com/OS1.0.2.0.TKHMIXM/miui_ALIOTHGlobal_OS1.0.2.0.TKHMIXM_b69e6a5400_13.0.zip
       https://bn.d.miui.com/OS1.0.1.0.TKHIDXM/miui_ALIOTHIDGlobal_OS1.0.1.0.TKHIDXM_1c1539a15f_13.0.zip
-      https://bn.d.miui.com/V14.0.3.0.TKHRUXM/miui_ALIOTHRUGlobal_V14.0.3.0.TKHRUXM_966287acb9_13.0.zip
-      https://bn.d.miui.com/V14.0.3.0.TKHTWXM/miui_ALIOTHTWGlobal_V14.0.3.0.TKHTWXM_4aabc516ec_13.0.zip
-      https://bn.d.miui.com/V14.0.3.0.TKHTRXM/miui_ALIOTHTRGlobal_V14.0.3.0.TKHTRXM_a03307201d_13.0.zip
+      https://bn.d.miui.com/OS1.0.2.0.TKHRUXM/miui_ALIOTHRUGlobal_OS1.0.2.0.TKHRUXM_68e02dd148_13.0.zip
+      https://bn.d.miui.com/OS1.0.1.0.TKHTWXM/miui_ALIOTHTWGlobal_OS1.0.1.0.TKHTWXM_80a5b3cee4_13.0.zip
+      https://bn.d.miui.com/OS1.0.2.0.TKHTRXM/miui_ALIOTHTRGlobal_OS1.0.2.0.TKHTRXM_400d468101_13.0.zip
       https://bn.d.miui.com/OS1.0.3.0.TKHCNXM/miui_ALIOTH_OS1.0.3.0.TKHCNXM_eab81b6bf0_13.0.zip"
 
 echo "Downloading payload dumper..."
