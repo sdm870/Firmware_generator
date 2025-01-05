@@ -40,14 +40,14 @@ elif [ "$arch" == "aarch64" ]; then
 fi
 
 payload_link="https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper-go_1.2.2_linux_$arch.tar.gz"
-zips="https://bn.d.miui.com/OS1.0.2.0.TKHINXM/miui_ALIOTHINGlobal_OS1.0.2.0.TKHINXM_14c0f2dff1_13.0.zip
-      https://bn.d.miui.com/OS1.0.3.0.TKHEUXM/miui_ALIOTHEEAGlobal_OS1.0.3.0.TKHEUXM_1d79dc27d3_13.0.zip
-      https://bn.d.miui.com/OS1.0.3.0.TKHMIXM/miui_ALIOTHGlobal_OS1.0.3.0.TKHMIXM_57a88631b9_13.0.zip
-      https://bn.d.miui.com/OS1.0.3.0.TKHIDXM/miui_ALIOTHIDGlobal_OS1.0.3.0.TKHIDXM_97a6ed731d_13.0.zip
-      https://bn.d.miui.com/OS1.0.3.0.TKHRUXM/miui_ALIOTHRUGlobal_OS1.0.3.0.TKHRUXM_f3170261e5_13.0.zip
+zips="https://bn.d.miui.com/OS1.0.1.0.TKHINXM/miui_ALIOTHINGlobal_OS1.0.1.0.TKHINXM_37dcb3109e_13.0.zip
+      https://bn.d.miui.com/OS1.0.1.0.TKHEUXM/miui_ALIOTHEEAGlobal_OS1.0.1.0.TKHEUXM_b0de6008b0_13.0.zip
+      https://bn.d.miui.com/OS1.0.2.0.TKHMIXM/miui_ALIOTHGlobal_OS1.0.2.0.TKHMIXM_b69e6a5400_13.0.zip
+      https://bn.d.miui.com/OS1.0.1.0.TKHIDXM/miui_ALIOTHIDGlobal_OS1.0.1.0.TKHIDXM_1c1539a15f_13.0.zip
+      https://bn.d.miui.com/OS1.0.2.0.TKHRUXM/miui_ALIOTHRUGlobal_OS1.0.2.0.TKHRUXM_68e02dd148_13.0.zip
       https://bn.d.miui.com/OS1.0.1.0.TKHTWXM/miui_ALIOTHTWGlobal_OS1.0.1.0.TKHTWXM_80a5b3cee4_13.0.zip
       https://bn.d.miui.com/OS1.0.2.0.TKHTRXM/miui_ALIOTHTRGlobal_OS1.0.2.0.TKHTRXM_400d468101_13.0.zip
-      https://bn.d.miui.com/OS1.0.6.0.TKHCNXM/miui_ALIOTH_OS1.0.6.0.TKHCNXM_101dfdb5be_13.0.zip"
+      https://bn.d.miui.com/OS1.0.3.0.TKHCNXM/miui_ALIOTH_OS1.0.3.0.TKHCNXM_eab81b6bf0_13.0.zip"
 
 echo "Downloading payload dumper..."
 aria2c --file-allocation=none -x 16 "$payload_link"
